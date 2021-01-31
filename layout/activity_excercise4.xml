@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 첫화면 질문 -->
+    <TextView
+        android:id="@+id/ex4Question1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:padding="5dp"
+        android:text="Remember fruits"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/PointText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/ex4Question1"
+        android:layout_gravity="center_horizontal"
+        android:padding="10dp"
+        android:text="0/50"
+        android:textSize="15dp"
+        android:layout_marginBottom="20dp"
+        android:textStyle="bold" />
+
+    <ProgressBar
+        android:id="@+id/progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+
+        android:layout_alignBottom="@+id/PointText1"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:layout_toEndOf="@+id/fruitLinear0"
+        android:layout_toRightOf="@+id/fruitLinear0"
+        android:max="100" />
+
+    <TextView
+        android:id="@+id/PointText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/PointText1"
+        android:layout_alignBottom="@+id/PointText1"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="center_horizontal"
+        android:padding="20dp"
+        android:text="Stage: "
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+
+    <!-- 두번째 화면 질문 -->
+    <TextView
+        android:id="@+id/ex4Question2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/fruitLinear0"
+        android:gravity="center_horizontal|center_vertical"
+        android:padding="5dp"
+        android:text="Find the fruits \nyou remember"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:id="@+id/fruitLinear0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone"
+        android:gravity="center">
+
+        <!-- 이미지1 -->
+        <ImageView
+            android:id="@+id/fruitImage0"
+            android:layout_width="260dp"
+            android:layout_height="240dp"
+            android:src="@drawable/fru3" />
+
+
+
+    </LinearLayout>
+
+    <!-- 그림 질문1 레이아웃 -->
+    <LinearLayout
+        android:id="@+id/fruitLinear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center">
+        <!-- 이미지1 -->
+        <ImageView
+            android:id="@+id/fruitImage1"
+            android:layout_width="150dp"
+            android:layout_height="140dp"
+            android:src="@drawable/fru3" />
+
+        <!-- 이미지2 -->
+        <ImageView
+            android:id="@+id/fruitImage2"
+            android:visibility="visible"
+            android:layout_width="150dp"
+            android:layout_height="140dp"
+            android:layout_marginLeft="40dp"
+            android:src="@drawable/fru6" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/fruitLinear2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:layout_marginTop="360dp"
+        android:gravity="center">
+        <!-- 이미지1 -->
+        <ImageView
+            android:id="@+id/fruitImage3"
+            android:layout_width="150dp"
+            android:layout_height="140dp"
+            android:src="@drawable/fru4" />
+
+        <!-- 이미지2 -->
+        <ImageView
+            android:id="@+id/fruitImage4"
+            android:layout_width="150dp"
+            android:layout_height="140dp"
+            android:layout_marginLeft="40dp"
+            android:src="@drawable/fru5" />
+
+    </LinearLayout>
+
+    <!-- 그림 질문2 레이아웃 -->
+    <RelativeLayout
+        android:id="@+id/fruitRelative2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/ex4Question2"
+        android:layout_marginTop="80dp"
+        android:visibility="invisible">
+        <!-- 이미지1 -->
+        <ImageView
+            android:id="@+id/fruit1"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/fru1" />
+
+        <ImageView
+            android:id="@+id/fruit1Answer"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/answer"
+            android:visibility="gone" />
+
+        <!-- 이미지2 -->
+        <ImageView
+            android:id="@+id/fruit2"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/fru2" />
+
+        <ImageView
+            android:id="@+id/fruit2Answer"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/fruit2"
+            android:visibility="gone" />
+
+        <!-- 이미지3 -->
+        <ImageView
+            android:id="@+id/fruit3"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/fru3" />
+
+        <ImageView
+            android:id="@+id/fruit3Answer"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/answer"
+            android:visibility="gone" />
+
+        <!-- 이미지 4 -->
+        <ImageView
+            android:id="@+id/fruit4"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_below="@+id/fruit1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/fru4" />
+
+        <ImageView
+            android:id="@+id/fruit4Answer"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_below="@+id/fruit1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/answer"
+            android:visibility="gone" />
+
+        <!-- 이미지5 -->
+        <ImageView
+            android:id="@+id/fruit5"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_below="@+id/fruit2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/fru5" />
+
+        <ImageView
+            android:id="@+id/fruit5Answer"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_below="@+id/fruit2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/answer"
+            android:visibility="gone" />
+
+
+        <!-- 이미지6 -->
+        <ImageView
+            android:id="@+id/fruit6"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/fruit3"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/fru6" />
+
+        <ImageView
+            android:id="@+id/fruit6Answer"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/fruit3"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/answer"
+            android:visibility="gone" />
+
+        <!-- 이미지 7 -->
+        <ImageView
+            android:id="@+id/fruit7"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_below="@+id/fruit4"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/fru7" />
+
+        <ImageView
+            android:id="@+id/fruit7Answer"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_below="@+id/fruit4"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/answer"
+            android:visibility="gone" />
+
+        <!-- 이미지8 -->
+        <ImageView
+            android:id="@+id/fruit8"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_below="@+id/fruit5"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/fru8" />
+
+        <ImageView
+            android:id="@+id/fruit8Answer"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_below="@+id/fruit5"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/answer"
+            android:visibility="gone" />
+
+        <!-- 이미지9 -->
+        <ImageView
+            android:id="@+id/fruit9"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/fruit6"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/fru9" />
+
+        <ImageView
+            android:id="@+id/fruit9Answer"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/fruit6"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/answer"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+
+    <!-- 카운트 다운-->
+    <TextView
+        android:id="@+id/PointText3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/fruitRelative2"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_marginBottom="25dp"
+        android:padding="5dp"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/countResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/playChance"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="25dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:padding="5dp"
+        android:text="Fruits found(0/2)"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <!-- 남은 목숨 -->
+    <TextView
+        android:id="@+id/playChance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|center_vertical"
+        android:padding="5dp"
+        android:text="(2 remaining chances)"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <!-- 카운트 다운-->
+    <TextView
+        android:id="@+id/countdown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/playChance"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center_horizontal|center_vertical"
+        android:padding="5dp"
+        android:text="Get Ready! 5"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+
+
+</RelativeLayout>

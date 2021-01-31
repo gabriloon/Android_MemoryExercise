@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- 첫화면 질문 -->
+    <TextView
+        android:id="@+id/timerText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:padding="5dp"
+        android:text="What's the number \nyou remember?"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="20dp"
+        android:ems="10"
+        android:hint="Insert the number"
+        android:inputType="numberSigned"
+        android:padding="20dp"
+        android:textSize="30dp">
+
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/PointText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText2"
+        android:layout_alignStart="@+id/editText2"
+        android:layout_below="@+id/timerText"
+        android:layout_gravity="center_horizontal"
+        android:padding="20dp"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+</RelativeLayout>

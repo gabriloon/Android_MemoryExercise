@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--<TextView-->
+    <!--android:id="@+id/scoreText"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:layout_margin="20dp"-->
+    <!--android:gravity="end"-->
+    <!--android:text="score: 0"-->
+    <!--android:textSize="30dp" />-->
+
+    <!-- 첫화면 질문 -->
+    <TextView
+        android:id="@+id/timerText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:padding="5dp"
+        android:text="Remember number"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <!-- 그림 질문1 레이아웃 -->
+    <LinearLayout
+        android:id="@+id/fruitLinear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="20dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/randNumText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="40dp"
+            android:gravity="center"
+            android:text="123"
+            android:textColor="#000000"
+            android:textSize="60dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/PointText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/countdown"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="89dp"
+        android:gravity = "center"
+        android:padding="20dp"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <!-- 카운트 다운-->
+    <TextView
+        android:id="@+id/countdown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/fruitLinear1"
+        android:layout_marginTop="42dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:padding="5dp"
+        android:text="Questions will be asked\nin 5 seconds"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+</RelativeLayout>

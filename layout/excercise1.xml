@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 첫화면 질문 -->
+    <TextView
+        android:id="@+id/ex1Question1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:padding="5dp"
+        android:text="Remember images"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+    <!-- 두번째 화면 질문 -->
+    <TextView
+        android:id="@+id/ex1Question2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:padding="5dp"
+        android:text="Respond to the questions below"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <!-- 이미지 문제 -->
+    <ImageView
+        android:id="@+id/ex1Image"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="110dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/dog1" />
+
+    <!-- 카운트 다운-->
+    <TextView
+        android:id="@+id/countdown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:padding="5dp"
+        android:text="Questions will be asked\nin 3 second"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <!-- 두번째 질문 -->
+    <TextView
+        android:id="@+id/ex1Question3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/answerLinear"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:text="Is this image the one\nyou remember?"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        android:visibility="invisible" />
+
+    <!-- yes or no 버튼 -->
+    <LinearLayout
+        android:id="@+id/answerLinear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:orientation="horizontal"
+        android:visibility="invisible">
+
+        <Button
+            android:id="@+id/ex1YesBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="yes"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/ex1NoBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="no"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</RelativeLayout>

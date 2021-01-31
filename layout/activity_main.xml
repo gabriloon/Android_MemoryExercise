@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="320dp"
+        android:layout_height="110dp"
+        android:background="#00000000"
+        android:gravity="center"
+        android:src="@drawable/logo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:id="@+id/imageView" />
+
+    <ImageButton
+        android:id="@+id/prevPictureRemember"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:src="@drawable/game1"
+        android:scaleType="fitXY"
+        android:background="#00000000"
+        android:layout_marginTop="39dp"
+        android:layout_below="@+id/imageView"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignStart="@+id/imageView" />
+
+    <ImageButton
+        android:id="@+id/blinkingBallRemember"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/game2"
+        android:scaleType="fitXY"
+        android:background="#00000000"
+        android:layout_below="@+id/prevPictureRemember"
+        android:layout_alignLeft="@+id/prevPictureRemember"
+        android:layout_alignStart="@+id/prevPictureRemember"
+        android:layout_marginTop="24dp" />
+
+    <ImageButton
+        android:id="@+id/lottoNumRemember"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/game3"
+        android:scaleType="fitXY"
+        android:background="#00000000"
+        android:layout_alignTop="@+id/prevPictureRemember"
+        android:layout_alignRight="@+id/imageView"
+        android:layout_alignEnd="@+id/imageView" />
+
+    <ImageButton
+    android:id="@+id/fruitRemember"
+    android:layout_width="200dp"
+    android:layout_height="100dp"
+    android:src="@drawable/game4"
+    android:scaleType="fitXY"
+    android:background="#00000000"
+        android:layout_above="@+id/wordRemember"
+        android:layout_alignRight="@+id/lottoNumRemember"
+        android:layout_alignEnd="@+id/lottoNumRemember" />
+
+    <ImageButton
+        android:id="@+id/wordRemember"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:src="@drawable/game5"
+        android:scaleType="fitXY"
+        android:background="#00000000"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/blinkingBallRemember"
+        android:layout_alignLeft="@+id/blinkingBallRemember"
+        android:layout_alignStart="@+id/blinkingBallRemember"
+        android:layout_alignRight="@+id/fruitRemember"
+        android:layout_alignEnd="@+id/fruitRemember" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Copyright 2018. Memorade Project Team. Gachon Univ.\nAll rights reserved."
+        android:textSize="12dp"
+        android:id="@+id/textView3"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="13dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="12dp"
+        android:id="@+id/version"
+        android:text="VERSION 1.4"
+        android:layout_marginBottom="13dp" />
+
+</RelativeLayout>
