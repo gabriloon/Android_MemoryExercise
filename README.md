@@ -26,7 +26,7 @@ The contents of each *folder* are as follows.<br>
 *NotUse*: Codes that have been created but are not used in the project.<br>
 
 ## RelatedEfforts
-Main Engine: Android Studio(https://developer.android.com/)<br>
-Image:  123RF(https://kr.123rf.com/)<br>
+Main Engine: [Android Studio](https://developer.android.com/)<br>
+Image:  [123RF](https://kr.123rf.com/)<br>
 ## Contributor
 gabriloon and 2 others.
