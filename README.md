@@ -19,8 +19,8 @@ Next, we thought of a number of ways, such as an alarm to notify you when a pers
 The overall game is divided into a short-term memory improvement game and a long-term memory improvement game.<br>
 There is one game in the long-term memory improvement game.<br>
 There are 6 different types of games in the short-term memory improvement game.<br>
-Each game has a level of difficulty, and each level of difficulty is set differently.<br>
-In **/layout**, the UI, that is, the in-game screen was configured.<br>
+Each game has a level of difficulty, and each level of difficulty is set differently.<br><br>
+In **/layout**, the UI, that is, the in-game screen was configured.<br><br>
 **/java** contains the code corresponding to the functional requirements.<br>
 
 ## RelatedEfforts
